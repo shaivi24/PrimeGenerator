@@ -33,8 +33,9 @@ public class OptimizedNaive implements PrimeGenerator {
 			return true;
 		
 		// return false if the number is even
-		else if (n%2==0)
+		else if (n%2==0) {
 			return false;
+		}
 		
 		// otherwise loop through till the root of the number
 		for (int i=3; i*i<=n; i+=2) {
