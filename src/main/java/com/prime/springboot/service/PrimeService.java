@@ -41,20 +41,5 @@ public class PrimeService {
 	public List<Prime> getAll() {
 		return primeRepository.findAll();
 	}
-	
-	/**
-	 * Returns the list of Prime objects stored in the database with 
-	 * the proper algorithm name
-	 * 
-	 * @param algorithm
-	 * @return
-	 */
-	public List<Prime> getAlgorithm(String algorithm) {
-		List<Prime> l = primeRepository.findAll();
-		for (Prime p : l) {
-			if (!p.getAlgorithm().equalsIgnoreCase(algorithm))
-				l.remove(p);
-		}
-		return l;
-	}
+
 }

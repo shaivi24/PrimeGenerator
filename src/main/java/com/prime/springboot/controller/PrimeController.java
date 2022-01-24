@@ -75,16 +75,4 @@ public class PrimeController {
 		return primeService.getAll();
 	}
 
-	/**
-	 * Gives the list of objects stored in the database 
-	 * with uses the particular algorithm
-	 * 
-	 * @param algorithm
-	 * @returns the list of prime objects
-	 */
-	@GetMapping("/database/{algorithm}")
-	public List<Prime> getAlgorithmData(@PathVariable("algorithm") String algorithm) {
-		return primeService.getAlgorithm(algorithm);
-	}
-
 }
