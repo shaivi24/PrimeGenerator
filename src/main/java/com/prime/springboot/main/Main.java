@@ -7,7 +7,7 @@ public class Main {
 	/**
 	 * Input from Command line
 	 * 'algorithm' 'lower' 'upper'
-	 * different algorithms: naive, eratosthenes, sundaram
+	 * different algorithms: naive, optnaive, eratosthenes
 	 * @param args
 	 */
 	public static void main(String[] args) {
